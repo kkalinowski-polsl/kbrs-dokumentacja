@@ -1,0 +1,1894 @@
+
+<!doctype html>
+<html lang="pl" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Dokumentacja programu KbRS do harmonogramowania produkcji">
+      
+      
+        <meta name="author" content="Krzysztof Kalinowski">
+      
+      
+        <link rel="canonical" href="https://kbrs.pl/dokumentacja/pierwsze-kroki/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../instalacja/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/kbrs-ikona.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Pierwsze kroki - Dokumentacja KbRS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/kbrs.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#pierwsze-kroki" class="md-skip">
+          Przejdź do treści
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Nagłówek">
+    <a href="https://kbrs.pl/" title="Dokumentacja KbRS" class="md-header__button md-logo" aria-label="Dokumentacja KbRS" data-md-component="logo">
+      
+  <img src="../assets/kbrs-ikona.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Dokumentacja KbRS
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Pierwsze kroki
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Tryb ciemny"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Tryb ciemny" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Tryb jasny"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Tryb jasny" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Szukaj" placeholder="Szukaj" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Szukaj">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Wyczyść" aria-label="Wyczyść" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicjowanie wyszukiwania
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Zakładki" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Start
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Pierwsze kroki
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../instalacja/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Podręcznik
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../co-nowego/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Co nowego
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://kbrs.pl/pobierz/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Pobierz
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://kbrs.pl/kontakt/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Kontakt
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Nawigacja" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://kbrs.pl/" title="Dokumentacja KbRS" class="md-nav__button md-logo" aria-label="Dokumentacja KbRS" data-md-component="logo">
+      
+  <img src="../assets/kbrs-ikona.svg" alt="logo">
+
+    </a>
+    Dokumentacja KbRS
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pierwsze kroki
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pierwsze kroki
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Spis treści">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Spis treści
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-utworz-nowy-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Utwórz nowy model
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-ustal-wielkosc-modelu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Ustal wielkość modelu
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-poznaj-okna-i-nawigator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Poznaj okna i nawigator
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-sprawdz-stanowiska" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Sprawdź stanowiska
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-utworz-procesy-technologie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Utwórz procesy (technologię)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-opisz-operacje-procesu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Opisz operacje procesu
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-wpisz-czasy-operacji" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Wpisz czasy operacji
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-wystaw-zlecenia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Wystaw zlecenia
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-wybierz-kryteria-oceny" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Wybierz kryteria oceny
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-uruchom-harmonogramowanie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Uruchom harmonogramowanie
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-poczekaj-na-wyniki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Poczekaj na wyniki
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-obejrzyj-harmonogram-na-wykresie-gantta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Obejrzyj harmonogram na wykresie Gantta
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-porownaj-harmonogramy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Porównaj harmonogramy
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-zapisz-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Zapisz model
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Podręcznik
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Podręcznik
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../instalacja/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Instalacja
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../dane/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dane wejściowe
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Dane wejściowe
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dane/okna-i-nawigator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Okna i nawigator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dane/kalendarze/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kalendarze czasu pracy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dane/stanowiska/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stanowiska
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dane/pracownicy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pracownicy i zasoby dodatkowe
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dane/procesy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Procesy i struktury procesów
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dane/operacje/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operacje
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dane/zlecenia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zlecenia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dane/kryteria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kryteria oceny
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../harmonogramowanie/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Harmonogramowanie
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Harmonogramowanie
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../harmonogramowanie/generowanie/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Generowanie harmonogramów
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wyniki
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Wyniki
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wyniki/gantt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wykres Gantta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wyniki/wskazniki-i-raporty/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wskaźniki, ocena i raporty
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pliki/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pliki modelu
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../slownik/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Słownik pojęć
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../problemy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rozwiązywanie problemów
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../co-nowego/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Co nowego
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://kbrs.pl/pobierz/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pobierz
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://kbrs.pl/kontakt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kontakt
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Spis treści">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Spis treści
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-utworz-nowy-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Utwórz nowy model
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-ustal-wielkosc-modelu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Ustal wielkość modelu
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-poznaj-okna-i-nawigator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Poznaj okna i nawigator
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-sprawdz-stanowiska" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Sprawdź stanowiska
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-utworz-procesy-technologie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Utwórz procesy (technologię)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-opisz-operacje-procesu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Opisz operacje procesu
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-wpisz-czasy-operacji" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Wpisz czasy operacji
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-wystaw-zlecenia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Wystaw zlecenia
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-wybierz-kryteria-oceny" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Wybierz kryteria oceny
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-uruchom-harmonogramowanie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Uruchom harmonogramowanie
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-poczekaj-na-wyniki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Poczekaj na wyniki
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-obejrzyj-harmonogram-na-wykresie-gantta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Obejrzyj harmonogram na wykresie Gantta
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-porownaj-harmonogramy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Porównaj harmonogramy
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-zapisz-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Zapisz model
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="pierwsze-kroki">Pierwsze kroki<a class="headerlink" href="#pierwsze-kroki" title="Permanent link">&para;</a></h1>
+<p>Ta strona prowadzi od pustego modelu do pierwszego harmonogramu. Każdy krok to jedno okno: <strong>gdzie</strong> jesteś, <strong>co</strong> zrobić, <strong>jak</strong> to wygląda. Szczegóły każdego okna są w <a href="../dane/">Podręczniku</a>.</p>
+<p><strong>Cały scenariusz w skrócie:</strong>
+model → stanowiska → procesy i operacje → zlecenia → kryteria → generowanie → wykres Gantta → ocena.</p>
+<hr />
+<h2 id="1-utworz-nowy-model">1. Utwórz nowy model<a class="headerlink" href="#1-utworz-nowy-model" title="Permanent link">&para;</a></h2>
+<p><strong>Gdzie:</strong> menu <strong>Plik</strong></p>
+<ol>
+<li>Wybierz <strong>Plik → Nowy → Harmonogramowanie produkcji</strong>.</li>
+<li>Jeśli masz już model, wybierz <strong>Plik → Otwórz</strong> (zob. <a href="../pliki/">Pliki modelu</a>).</li>
+</ol>
+<figure>
+  <img alt="Menu Plik → Nowy" src="../img/v2020/plik-nowy.png" width="420" />
+<br />
+<figcaption>Menu Plik → Nowy</figcaption>
+</figure>
+<h2 id="2-ustal-wielkosc-modelu">2. Ustal wielkość modelu<a class="headerlink" href="#2-ustal-wielkosc-modelu" title="Permanent link">&para;</a></h2>
+<p><strong>Gdzie:</strong> okno wstępnej konfiguracji (otwiera się samo po kroku 1)</p>
+<ol>
+<li>Podaj liczbę stanowisk, procesów, operacji w procesie i zleceń.</li>
+<li>Wybierz rodzaj przepływu: <strong>job shop</strong> albo <strong>flow shop</strong>.</li>
+<li>Zaznacz <strong>Wygeneruj dane losowe</strong>, jeśli chcesz od razu mieć wypełniony model do ćwiczeń. Bez tej opcji program przyjmie wartości domyślne.</li>
+<li>Kliknij <strong>Utwórz</strong>.</li>
+</ol>
+<figure>
+  <img alt="Okno wstępnej konfiguracji" src="../img/v2020/nowy-konfiguracja.png" width="420" />
+<br />
+<figcaption>Wstępna konfiguracja i generator danych</figcaption>
+</figure>
+<div class="admonition tip">
+<p class="admonition-title">Wszystko da się później zmienić</p>
+<p>Liczby i wartości z tego okna to tylko punkt startu — każdą można potem edytować w oknach danych.</p>
+</div>
+<h2 id="3-poznaj-okna-i-nawigator">3. Poznaj okna i nawigator<a class="headerlink" href="#3-poznaj-okna-i-nawigator" title="Permanent link">&para;</a></h2>
+<p><strong>Gdzie:</strong> okno <strong>Nawigator</strong> (menu <strong>Widok → Panel nawigacji</strong> albo ikona <strong>N</strong>)</p>
+<ul>
+<li>Nawigator otwiera okna z danymi i wynikami.</li>
+<li><strong>Prawy przycisk myszy</strong> na tabeli otwiera menu z opcjami (dodaj, usuń, przesuń, zapisz do CSV) — działa we wszystkich tabelach programu.</li>
+<li>Po wpisaniu wartości zatwierdź je <strong><span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-s">S</kbd></span></strong> — dotyczy wszystkich tabel i pól edycyjnych.</li>
+</ul>
+<figure>
+  <img alt="Okno nawigatora" src="../img/v2020/nawigator.png" width="220" />
+<br />
+<figcaption>Nawigator</figcaption>
+</figure>
+<div class="admonition warning">
+<p class="admonition-title">Bez <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-s">S</kbd></span> zmiana w tabeli nie zostanie zapamiętana</p>
+</div>
+<h2 id="4-sprawdz-stanowiska">4. Sprawdź stanowiska<a class="headerlink" href="#4-sprawdz-stanowiska" title="Permanent link">&para;</a></h2>
+<p><strong>Gdzie:</strong> okno <strong>System produkcyjny</strong>, zakładka <strong>Stanowiska</strong></p>
+<ol>
+<li>Dodaj lub usuń stanowiska (prawy przycisk → menu).</li>
+<li>Każdemu stanowisku przypisz kalendarz pracy i pojemność.</li>
+<li>Zatwierdź <strong><span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-s">S</kbd></span></strong>.</li>
+</ol>
+<figure>
+  <img alt="Zakładka Stanowiska" src="../img/v2020/stanowiska.png" />
+<br />
+<figcaption>System produkcyjny → Stanowiska</figcaption>
+</figure>
+<h2 id="5-utworz-procesy-technologie">5. Utwórz procesy (technologię)<a class="headerlink" href="#5-utworz-procesy-technologie" title="Permanent link">&para;</a></h2>
+<p><strong>Gdzie:</strong> okno <strong>Procesy i zlecenia</strong>, zakładka <strong>Procesy</strong></p>
+<ol>
+<li>Utwórz tyle procesów, ile różnych wyrobów chcesz planować.</li>
+<li>Dodawanie i usuwanie — prawy przycisk myszy.</li>
+</ol>
+<figure>
+  <img alt="Zakładka Procesy" src="../img/v2020/procesy.png" width="420" />
+<br />
+<figcaption>Procesy i zlecenia → Procesy</figcaption>
+</figure>
+<h2 id="6-opisz-operacje-procesu">6. Opisz operacje procesu<a class="headerlink" href="#6-opisz-operacje-procesu" title="Permanent link">&para;</a></h2>
+<p><strong>Gdzie:</strong> <strong>Procesy i zlecenia → Operacje → Lista operacji</strong></p>
+<ol>
+<li>Wybierz proces do edycji.</li>
+<li>Dodaj operacje i ułóż je w kolejności.</li>
+<li>Ustal cechy operacji (podzielność, liczba zasobów itd. — zob. <a href="../dane/operacje/">Operacje</a>).</li>
+</ol>
+<figure>
+  <img alt="Lista operacji" src="../img/v2020/operacje-lista.png" />
+<br />
+<figcaption>Operacje → Lista operacji</figcaption>
+</figure>
+<h2 id="7-wpisz-czasy-operacji">7. Wpisz czasy operacji<a class="headerlink" href="#7-wpisz-czasy-operacji" title="Permanent link">&para;</a></h2>
+<p><strong>Gdzie:</strong> <strong>Procesy i zlecenia → Operacje → Czasy jednostkowe</strong></p>
+<ol>
+<li>Wpisz czas każdej operacji na stanowiskach, które mogą ją wykonać.</li>
+<li>Kilka stanowisk z czasem przy jednej operacji = stanowiska <strong>równoległe</strong> (program wybierze jedno z nich).</li>
+<li>Opcjonalnie w kolejnych zakładkach: koszty, czasy przygotowawczo-zakończeniowe, zrównoleglenie.</li>
+</ol>
+<figure>
+  <img alt="Czasy jednostkowe" src="../img/v2020/operacje-czasy.png" />
+<br />
+<figcaption>Operacje → Czasy jednostkowe</figcaption>
+</figure>
+<h2 id="8-wystaw-zlecenia">8. Wystaw zlecenia<a class="headerlink" href="#8-wystaw-zlecenia" title="Permanent link">&para;</a></h2>
+<p><strong>Gdzie:</strong> <strong>Procesy i zlecenia → Zlecenia</strong></p>
+<ol>
+<li>Ustal liczbę i kolejność zleceń.</li>
+<li>Każdemu zleceniu wybierz proces.</li>
+<li>Pozostałe cechy (liczba sztuk, terminy, strategia) — dwukrotne kliknięcie w komórkę.</li>
+</ol>
+<figure>
+  <img alt="Zakładka Zlecenia" src="../img/v2020/zlecenia.png" />
+<br />
+<figcaption>Procesy i zlecenia → Zlecenia</figcaption>
+</figure>
+<h2 id="9-wybierz-kryteria-oceny">9. Wybierz kryteria oceny<a class="headerlink" href="#9-wybierz-kryteria-oceny" title="Permanent link">&para;</a></h2>
+<p><strong>Gdzie:</strong> okno <strong>Ocena wielokryterialna</strong>, zakładka <strong>Kryteria oceny</strong></p>
+<ol>
+<li>Nadaj wagi kryteriom, które są dla Ciebie ważne.</li>
+<li>Waga <strong>0</strong> = kryterium nie jest brane pod uwagę.</li>
+</ol>
+<figure>
+  <img alt="Kryteria ocen" src="../img/v2020/kryteria-ocen.png" width="380" />
+<br />
+<figcaption>Ocena wielokryterialna → Kryteria</figcaption>
+</figure>
+<h2 id="10-uruchom-harmonogramowanie">10. Uruchom harmonogramowanie<a class="headerlink" href="#10-uruchom-harmonogramowanie" title="Permanent link">&para;</a></h2>
+<p><strong>Gdzie:</strong> okno <strong>Harmonogramowanie</strong></p>
+<ol>
+<li>Wybierz reguły (algorytmy) tworzenia harmonogramów — co najmniej jedną.</li>
+<li>Uruchom generowanie.</li>
+</ol>
+<figure>
+  <img alt="Ustawienia harmonogramowania" src="../img/v2020/ustawienia-harmonogramowania.png" />
+<br />
+<figcaption>Ustawienia harmonogramowania</figcaption>
+</figure>
+<h2 id="11-poczekaj-na-wyniki">11. Poczekaj na wyniki<a class="headerlink" href="#11-poczekaj-na-wyniki" title="Permanent link">&para;</a></h2>
+<p><strong>Gdzie:</strong> okno postępu (widoczne tylko w czasie obliczeń)</p>
+<ul>
+<li>Okno pokazuje liczbę harmonogramów, najlepszy i najgorszy wynik oraz czas.</li>
+<li><strong>Stop</strong> kończy poszukiwanie — znalezione harmonogramy zostają.</li>
+</ul>
+<figure>
+  <img alt="Okno postępu" src="../img/v2020/generowanie-postep.jpeg" />
+<br />
+<figcaption>Postęp generowania</figcaption>
+</figure>
+<h2 id="12-obejrzyj-harmonogram-na-wykresie-gantta">12. Obejrzyj harmonogram na wykresie Gantta<a class="headerlink" href="#12-obejrzyj-harmonogram-na-wykresie-gantta" title="Permanent link">&para;</a></h2>
+<p><strong>Gdzie:</strong> okno <strong>Harmonogram</strong>, zakładka <strong>Wykres Gantta</strong></p>
+<ol>
+<li>Wybierz harmonogram z listy.</li>
+<li>Kliknij operację — zobaczysz jej parametry, czasy i ścieżkę całego zlecenia.</li>
+<li>Powiększenie: zaznacz prostokąt <strong>od lewej do prawej</strong>; powrót: <strong>od prawej do lewej</strong>.</li>
+<li>Prawy przycisk na wykresie — opcje, zapis, kopiowanie.</li>
+</ol>
+<figure>
+  <img alt="Wykres Gantta" src="../img/v2020/gantt-marszruty.jpeg" />
+<br />
+<figcaption>Wykres Gantta ze ścieżką zlecenia</figcaption>
+</figure>
+<h2 id="13-porownaj-harmonogramy">13. Porównaj harmonogramy<a class="headerlink" href="#13-porownaj-harmonogramy" title="Permanent link">&para;</a></h2>
+<p><strong>Gdzie:</strong> okno <strong>Harmonogram</strong> → zakładki <strong>Szczegóły harmonogramu</strong> i <strong>Wskaźniki oceny</strong>; okno <strong>Ocena wielokryterialna → Wyniki</strong></p>
+<ol>
+<li><strong>Szczegóły</strong> — parametry harmonogramu widocznego na wykresie.</li>
+<li><strong>Wskaźniki oceny</strong> — wszystkie harmonogramy w tabeli; kliknięcie nagłówka sortuje.</li>
+<li><strong>Wyniki</strong> oceny wielokryterialnej — ranking z uwzględnieniem wag; wybierz eksperta i sortowanie.</li>
+</ol>
+<figure>
+  <img alt="Wyniki oceny" src="../img/v2020/wyniki-oceny.jpeg" />
+<br />
+<figcaption>Ocena wielokryterialna → Wyniki</figcaption>
+</figure>
+<h2 id="14-zapisz-model">14. Zapisz model<a class="headerlink" href="#14-zapisz-model" title="Permanent link">&para;</a></h2>
+<p><strong>Gdzie:</strong> menu <strong>Plik → Zapisz</strong> / <strong>Zapisz jako</strong></p>
+<ul>
+<li>Model zapisuje się w pliku <code>.kbrs</code> (dane i ustawienia w jednym pliku).</li>
+<li>Szczegóły: <a href="../pliki/">Pliki modelu</a>.</li>
+</ul>
+<hr />
+<p><strong>Co dalej?</strong> Każdy krok ma swoją stronę w Podręczniku — zacznij od <a href="../dane/">Danych wejściowych</a> albo sprawdź pojęcia w <a href="../slownik/">Słowniku</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Powrót do góry
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Stopka" >
+        
+          
+          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Poprzednia strona: Start">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Poprzednia strona
+              </span>
+              <div class="md-ellipsis">
+                Start
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../instalacja/" class="md-footer__link md-footer__link--next" aria-label="Następna strona: Instalacja">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Następna strona
+              </span>
+              <div class="md-ellipsis">
+                Instalacja
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2001–2026 KbRS
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.indexes", "navigation.footer", "navigation.top", "toc.follow", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Skopiowano do schowka", "clipboard.copy": "Kopiuj do schowka", "search.result.more.one": "1 wi\u0119cej na tej stronie", "search.result.more.other": "# wi\u0119cej na tej stronie", "search.result.none": "Brak wynik\u00f3w wyszukiwania", "search.result.one": "Wyniki wyszukiwania: 1", "search.result.other": "Wyniki wyszukiwania: #", "search.result.placeholder": "Zacznij pisa\u0107, aby szuka\u0107", "search.result.term.missing": "Brak", "select.version": "Wybierz wersj\u0119"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,70 @@
+/* Czcionka Inter (OFL) — plik lokalny z repozytorium strony kbrs.pl,
+   bez Google Fonts (theme.font: false w mkdocs.yml) */
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/inter-pl-wght.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Kolory strony kbrs.pl */
+:root {
+  --kbrs-link: #3B6E9E;
+  --kbrs-granat: #1E3A5F;
+  --kbrs-tlo-sekcji: #EAF1F8;
+  --kbrs-tekst: #1F2933;
+  --kbrs-linie: #C9D6E3;
+  --md-text-font: "Inter";
+}
+
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: var(--kbrs-granat);
+  --md-primary-fg-color--light: var(--kbrs-link);
+  --md-primary-fg-color--dark: #152B47;
+  --md-accent-fg-color: var(--kbrs-link);
+  --md-accent-fg-color--transparent: rgba(59, 110, 158, .1);
+  --md-typeset-color: var(--kbrs-tekst);
+  --md-typeset-a-color: var(--kbrs-link);
+  --md-default-fg-color--lightest: var(--kbrs-linie);
+  --md-footer-bg-color: var(--kbrs-granat);
+  --md-footer-bg-color--dark: #152B47;
+}
+
+/* Tryb ciemny: nagłówek w kolorze strony, linki jaśniejsze (czytelne na ciemnym tle) */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: var(--kbrs-granat);
+  --md-primary-fg-color--light: #6E9CC8;
+  --md-primary-fg-color--dark: #152B47;
+  --md-accent-fg-color: #8DB6DD;
+  --md-typeset-a-color: #8DB6DD;
+}
+
+/* Tło sekcji: nagłówki tabel i karty na stronie startowej */
+[data-md-color-scheme="default"] .md-typeset table:not([class]) th {
+  background-color: var(--kbrs-tlo-sekcji);
+}
+[data-md-color-scheme="default"] .md-typeset .grid.cards > ul > li {
+  border-color: var(--kbrs-linie);
+}
+[data-md-color-scheme="default"] .md-typeset .grid.cards > ul > li:hover {
+  background-color: var(--kbrs-tlo-sekcji);
+}
+
+/* Zrzuty ekranu: ramka, wyśrodkowanie, podpis pod spodem */
+.md-typeset figure img {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .08);
+}
+.md-typeset figure figcaption {
+  font-size: .75rem;
+  color: var(--md-default-fg-color--light);
+}
+
+/* Kroki w „Pierwszych krokach” — wyraźniejsze nagłówki */
+.md-typeset .krok h2,
+.md-typeset h2.krok {
+  border-left: 4px solid var(--md-primary-fg-color);
+  padding-left: .5rem;
+}
