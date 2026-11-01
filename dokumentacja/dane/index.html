@@ -1294,7 +1294,7 @@
 </ul>
 <p>Dane można wprowadzić ręcznie w oknach programu, wczytać z pliku albo odczytać z systemu zewnętrznego.</p>
 <h2 id="nowy-model">Nowy model<a class="headerlink" href="#nowy-model" title="Permanent link">&para;</a></h2>
-<p><strong>Plik → Nowy → Harmonogramowanie produkcji</strong> otwiera okno wstępnej konfiguracji.</p>
+<p><strong>Plik → Nowy → Harmonogramowanie produkcji</strong> otwiera okno <strong>Tworzenie nowego modelu środowiska produkcyjnego</strong>.</p>
 <figure>
   <img alt="Menu Plik → Nowy" src="../img/v2020/plik-nowy.png" width="420" />
 <br />
@@ -1308,30 +1308,30 @@
 <table>
 <thead>
 <tr>
-<th>pole</th>
-<th>znaczenie</th>
+<th>ramka</th>
+<th>co się w niej ustala</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Ustawienia ogólne</strong></td>
-<td>liczba stanowisk, procesów, operacji w procesie, zleceń; rodzaj przepływu</td>
+<td><strong>System produkcyjny</strong></td>
+<td>liczba stanowisk; opcjonalnie zasoby dodatkowe — liczba grup / kompetencji i liczba pracowników</td>
 </tr>
 <tr>
-<td><strong>Wygeneruj dane losowe</strong></td>
-<td>wypełnia model losowymi wartościami z podanych zakresów (do późniejszej edycji); bez tej opcji — wartości domyślne</td>
+<td><strong>Technologia</strong></td>
+<td>liczba procesów technologicznych i liczba operacji w procesie (min-max); <strong>Konfiguracja</strong>: <strong>Job shop</strong> (każdy proces ma własną kolejność stanowisk) albo <strong>Flow shop</strong> (wszystkie procesy idą przez stanowiska w tej samej kolejności)</td>
 </tr>
 <tr>
-<td><strong>Rodzaj przepływu</strong></td>
-<td><strong>job shop</strong> (każdy proces ma własną kolejność stanowisk) albo <strong>flow shop</strong> (wszystkie procesy idą przez stanowiska w tej samej kolejności)</td>
-</tr>
-<tr>
-<td><strong>Procesy technologiczne</strong></td>
-<td>zakresy losowanych wartości, zrównoleglenie operacji, stanowiska równoległe, podzielność operacji</td>
+<td><strong>Operacje</strong></td>
+<td>zakresy czasów jednostkowych, tpz, kosztów i zrównoleglenia operacji; <strong>Operacje wywłaszczalne</strong>, <strong>Operacje przerywalne</strong>, <strong>Stanowiska równoległe</strong>; <strong>Dane losowe</strong> — wypełnia model losowymi wartościami z podanych zakresów (do późniejszej edycji); bez tej opcji — wartości domyślne</td>
 </tr>
 <tr>
 <td><strong>Zlecenia produkcyjne</strong></td>
-<td>strategia harmonogramowania, wyznaczanie terminów dyrektywnych</td>
+<td>liczba zleceń; <strong>Strategie planowania</strong>: <strong>w przód</strong>, <strong>wstecz</strong> albo <strong>losowo</strong>; terminy dyrektywne (suma czasów + %)</td>
+</tr>
+<tr>
+<td><strong>Kalendarz czasu pracy</strong></td>
+<td>liczba zmian (8h); <strong>Kalendarz szczegółowy</strong></td>
 </tr>
 </tbody>
 </table>

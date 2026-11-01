@@ -1046,6 +1046,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Obsługa wykresu">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#menu-osi-wykresu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Menu osi wykresu
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1344,6 +1361,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Obsługa wykresu">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#menu-osi-wykresu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Menu osi wykresu
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1445,7 +1479,11 @@
 </tr>
 <tr>
 <td>opis osi pionowej</td>
-<td>domyślnie Id zasobu; zmiana — kliknięcie nagłówka kolumny w <strong>System produkcyjny → Stanowiska</strong> lub <strong>Pracownicy</strong></td>
+<td>kliknięcie osi pionowej (lewy przycisk) → menu — zob. niżej</td>
+</tr>
+<tr>
+<td>oś czasu w jednostkach albo w datach</td>
+<td>kliknięcie osi poziomej (lewy przycisk) → menu — zob. niżej</td>
 </tr>
 <tr>
 <td>zapis i kopiowanie</td>
@@ -1453,6 +1491,17 @@
 </tr>
 </tbody>
 </table>
+<h3 id="menu-osi-wykresu">Menu osi wykresu<a class="headerlink" href="#menu-osi-wykresu" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Nowość — wersja dla testerów</p>
+</div>
+<p>Kliknięcie lewym przyciskiem osi pionowej otwiera menu opisu wierszy:</p>
+<ul>
+<li><strong>Opis wierszy - stanowiska</strong>: <strong>Id</strong>, <strong>Nazwa</strong>, <strong>Kod</strong> albo <strong>Gniazdo</strong>,</li>
+<li><strong>Opis wierszy - pracownicy</strong> (gdy model ma pracowników): <strong>Id</strong>, <strong>Nazwa</strong> albo <strong>Kod</strong>.</li>
+</ul>
+<p>Wykres rysuje się od razu z nowymi opisami; wybór jest zapamiętywany tak samo jak w oknie <strong>Opcje</strong> (zakładka <strong>Wyświetlane nazwy</strong>).</p>
+<p>Kliknięcie lewym przyciskiem osi poziomej otwiera menu <strong>Oś czasu</strong>: <strong>Jednostki czasu</strong> albo <strong>Daty</strong> — to samo co pole <strong>Oś czasu w formie daty</strong> w oknie <strong>Opcje</strong>. Wykres w datach zajmuje całą szerokość okna, tak jak w jednostkach czasu.</p>
 <figure>
   <img alt="Ścieżki zleceń" src="../../img/v2020/gantt-marszruty.jpeg" />
 <br />
@@ -1464,7 +1513,7 @@
 </div>
 <p>Na stanowisku, które może wykonywać kilka operacji naraz, operacje równoczesne są rysowane na osobnych, cieńszych torach w jednym wierszu. Wysokość pasków zależy od skali osi (powiększenie, wydruk); na niskich paskach opisy są ukrywane.</p>
 <h2 id="opcje-wykresu">Opcje wykresu<a class="headerlink" href="#opcje-wykresu" title="Permanent link">&para;</a></h2>
-<p>Okno <strong>Opcje → Opcje wykresu</strong> (przycisk <strong>Opcje wykresu</strong> albo menu <strong>Narzędzia → Opcje wykresów</strong>):</p>
+<p>Okno <strong>Opcje</strong>, zakładki <strong>Opcje wykresu I</strong> i <strong>Opcje wykresu II</strong> (przycisk <strong>Opcje wykresu</strong> albo menu <strong>Narzędzia → Opcje wykresów</strong>). Najczęściej używane:</p>
 <table>
 <thead>
 <tr>
@@ -1474,15 +1523,15 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Przerwy / Kalendarze</strong></td>
+<td><strong>Przerwy (kalendarze)</strong></td>
 <td>wyświetlanie przerw</td>
 </tr>
 <tr>
-<td><strong>Data/czas</strong></td>
-<td>oś pozioma w datach zamiast jednostek czasu</td>
+<td><strong>Oś czasu w formie daty</strong></td>
+<td>oś pozioma w datach zamiast jednostek czasu (to samo co menu osi poziomej)</td>
 </tr>
 <tr>
-<td><strong>Oznaczenia operacji</strong></td>
+<td><strong>Oznaczenia operacji na wykresie Gantta</strong></td>
 <td>etykiety operacji według wybranego kodu opisu</td>
 </tr>
 </tbody>

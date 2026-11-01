@@ -1342,7 +1342,7 @@
 
 
 <h1 id="operacje">Operacje<a class="headerlink" href="#operacje" title="Permanent link">&para;</a></h1>
-<p>Operacje procesu są w zakładce <strong>Operacje → Lista operacji</strong>. Po wybraniu procesu można przeglądać i zmieniać cechy jego operacji. W oknie <strong>Personel</strong> ustala się rodzaj i liczbę zasobów dodatkowych potrzebnych w operacji.</p>
+<p>Operacje procesu są w zakładce <strong>Operacje → Lista operacji</strong>. Po wybraniu procesu można przeglądać i zmieniać cechy jego operacji. Rodzaj i liczbę zasobów dodatkowych potrzebnych w operacji ustala się w tabeli <strong>Grupy zasobów dodatkowych</strong> pod listą operacji.</p>
 <figure>
   <img alt="Lista operacji" src="../../img/v2020/operacje-lista.png" />
 <br />
@@ -1352,45 +1352,46 @@
 <table>
 <thead>
 <tr>
-<th>cecha</th>
+<th>kolumna</th>
 <th>wartości</th>
 <th>znaczenie</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Id, Nr, Opis, Kod</strong></td>
+<td><strong>Id</strong>, <strong>Nr</strong>, <strong>Opis</strong>, <strong>Kod</strong></td>
 <td>tekst, liczba</td>
 <td>opis operacji</td>
 </tr>
 <tr>
-<td><strong>Wywłaszczalność</strong> (<em>preemption</em>)</td>
+<td><strong>Wywłaszczalna (pmtn)</strong></td>
 <td>tak / nie</td>
 <td><strong>tak</strong> — operację można przerwać, żeby wykonać inną, i dokończyć później, także na innym stanowisku</td>
 </tr>
 <tr>
-<td><strong>Wznawialność</strong> (<em>resumability</em>)</td>
+<td><strong>Wznawialna (resum)</strong></td>
 <td>tak / nie</td>
 <td><strong>tak</strong> — operację można przerwać na czas przestoju stanowiska (np. przerwy w kalendarzu) i dokończyć później, także na innym stanowisku</td>
 </tr>
 <tr>
-<td><strong>Min / maks. zasobów</strong></td>
+<td><strong>min. zasobów</strong>, <strong>maks. zasobów</strong></td>
 <td>liczba; min &gt; 0, maks ≥ min</td>
 <td>ile zasobów potrzeba; operacja jest planowana tylko tam, gdzie dostępnych jest co najmniej <em>min</em>, przydzielanych jest najwyżej <em>maks</em></td>
 </tr>
 <tr>
-<td><strong>Zamiana zasobów</strong></td>
+<td><strong>Zamienność zasobów</strong></td>
 <td>tak / nie</td>
 <td><strong>tak</strong> — zestaw zasobów może się zmieniać w trakcie operacji; <strong>nie</strong> — ten sam od początku do końca</td>
 </tr>
 <tr>
-<td><strong>Czas proporcjonalny</strong></td>
+<td><strong>Czas prop.</strong></td>
 <td>tak / nie</td>
 <td><strong>tak</strong> — czas zależy od liczby przydzielonych zasobów; <strong>nie</strong> — czas stały</td>
 </tr>
 </tbody>
 </table>
-<p>Wywłaszczalność i wznawialność na <strong>nie</strong> — operacja jest <strong>niepodzielna</strong>.</p>
+<p>Operacja, która nie jest ani wywłaszczalna, ani wznawialna, jest <strong>niepodzielna</strong>.</p>
+<p>Te same cechy można zmienić naraz we wszystkich operacjach: prawy przycisk na liście → <strong>Zmien we wszystkich operacjach</strong> (bieżący proces) albo <strong>Zmien we wszystkich procesach</strong>.</p>
 <h2 id="czasy-tpz-koszty-zrownoleglenie">Czasy, Tpz, koszty, zrównoleglenie<a class="headerlink" href="#czasy-tpz-koszty-zrownoleglenie" title="Permanent link">&para;</a></h2>
 <p>Kolejne zakładki zawierają: czasy jednostkowe na stanowiskach, czasy przygotowawczo-zakończeniowe (Tpz), koszty i możliwość zrównoleglenia operacji.</p>
 <figure>

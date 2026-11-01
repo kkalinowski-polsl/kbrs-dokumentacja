@@ -1227,6 +1227,25 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Spis treści
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#reguy-szeregowania" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reguły szeregowania
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1243,7 +1262,7 @@
 
 
 <h1 id="ustawienia-harmonogramowania">Ustawienia harmonogramowania<a class="headerlink" href="#ustawienia-harmonogramowania" title="Permanent link">&para;</a></h1>
-<p>Przed generowaniem ustala się, jak program szuka i ocenia harmonogramy.</p>
+<p>Przed generowaniem ustala się, jak program szuka i ocenia harmonogramy — w oknie <strong>Ustawienia harmonogramowania</strong> (menu <strong>Harmonogramowanie → Ustawienia</strong>).</p>
 <figure>
   <img alt="Ustawienia harmonogramowania" src="../img/v2020/ustawienia-harmonogramowania.png" />
 <br />
@@ -1259,18 +1278,73 @@
 <tbody>
 <tr>
 <td><strong>Reguły szeregowania</strong></td>
-<td>co najmniej jedna reguła (algorytm) układania zleceń; każda daje własne harmonogramy</td>
+<td>co najmniej jedna reguła (algorytm) układania zleceń; każda daje własne harmonogramy — lista niżej</td>
 </tr>
 <tr>
-<td><strong>Wybór wariantu operacji</strong></td>
-<td>jak wybierać stanowisko spośród równoległych: algorytm <strong>zachłanny</strong> (z parametrami funkcji celu) albo <strong>losowy</strong></td>
+<td><strong>Warianty operacji</strong></td>
+<td>grupa <strong>Wybór zasobu z równoległych</strong> — jak wybierać stanowisko spośród równoległych: według wcześniejszego czasu rozpoczęcia / zakończenia i wskaźnika (W), według wskaźnika (W), losowo, równomierne obciążenie, minimalna liczba zasobów, pozycja rankingowa w grupie; wzór wskaźnika — <strong>Obliczanie wskaźnika (W)</strong></td>
 </tr>
 <tr>
 <td><strong>Opcje harmonogramowania</strong></td>
-<td>możliwość pominięcia przy szukaniu rozwiązań Tpz, zasobów ludzkich i kalendarzy</td>
+<td><strong>Planowanie z tpz</strong>, <strong>Planowanie zasobów ludzkich</strong>, <strong>Planowanie z kalendarzem</strong> — wyłączenie pomija przy szukaniu rozwiązań odpowiednio Tpz, zasoby ludzkie albo kalendarze</td>
+</tr>
+<tr>
+<td><strong>Kolejność procesów równoległych</strong></td>
+<td>kolejność procesów, które w strukturze zlecenia mogą iść równolegle: według przyjętej reguły, według czasu pierwszej / ostatniej operacji, losowo, według priorytetu operacji albo luzu CPM</td>
 </tr>
 </tbody>
 </table>
+<p>Przycisk <strong>Harmonogramowanie</strong> w tym oknie uruchamia generowanie — zob. <a href="generowanie/">Generowanie harmonogramów</a>.</p>
+<h2 id="reguy-szeregowania">Reguły szeregowania<a class="headerlink" href="#reguy-szeregowania" title="Permanent link">&para;</a></h2>
+<p>Nazwy jak w oknie; każda zaznaczona reguła daje własne harmonogramy.</p>
+<table>
+<thead>
+<tr>
+<th>reguła</th>
+<th>kolejność zleceń</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>List - wg listy zleceń</strong> / <strong>RevList - wg listy zleceń od końca</strong></td>
+<td>według listy zleceń / od końca listy</td>
+</tr>
+<tr>
+<td><strong>minPrior - min. priorytetu</strong> / <strong>maxPrior - maks. priorytetu</strong></td>
+<td>według priorytetu zlecenia</td>
+</tr>
+<tr>
+<td><strong>EDD - najwcz. termin dyrektywny</strong> / <strong>LDD - najpóźń. termin dyrektywny</strong></td>
+<td>według terminu dyrektywnego</td>
+</tr>
+<tr>
+<td><strong>ERD - najwcz. termin rozpoczęcia</strong> / <strong>LRD - najpóźn. termin rozpoczęcia</strong></td>
+<td>według najwcześniejszego terminu rozpoczęcia</td>
+</tr>
+<tr>
+<td><strong>SPT - najkrótszy czas trwania</strong> / <strong>LPT - najdłuższy czas trwania</strong></td>
+<td>według czasu trwania</td>
+</tr>
+<tr>
+<td><strong>Palmer - regula Palmera</strong>, <strong>Gupta - reguła Gupty</strong></td>
+<td>reguły dla układu przepływowego (flow shop)</td>
+</tr>
+<tr>
+<td><strong>Random - szeregowanie losowe</strong></td>
+<td>losowa kolejność; liczba prób — <strong>liczba iteracji</strong></td>
+</tr>
+<tr>
+<td><strong>ANT Mrówkowy</strong></td>
+<td>algorytm mrówkowy</td>
+</tr>
+<tr>
+<td><strong>Op - równoległy, wg dostępnych operacji</strong></td>
+<td>układanie według operacji dostępnych w danej chwili, zamiast całych zleceń po kolei</td>
+</tr>
+</tbody>
+</table>
+<p>Pole <strong>usuwanie identycznych rozwiązań</strong> odrzuca harmonogramy powtarzające się.</p>
+<p>Kierunek planowania (w przód albo wstecz od terminu) ustala się dla każdego zlecenia w kolumnie <strong>Strategia</strong> — zob. <a href="../dane/zlecenia/">Zlecenia</a>.</p>
 
 
 

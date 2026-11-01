@@ -1262,49 +1262,62 @@
 <table>
 <thead>
 <tr>
-<th>pole</th>
+<th>kolumna</th>
 <th>znaczenie</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Proces</strong></td>
-<td>proces główny zlecenia</td>
-</tr>
-<tr>
-<td><strong>Priorytet</strong></td>
-<td>ważność zlecenia</td>
-</tr>
-<tr>
-<td><strong>Rozmiar serii</strong></td>
-<td>liczba sztuk w zleceniu</td>
-</tr>
-<tr>
-<td><strong>Rozmiar partii</strong></td>
-<td>liczba sztuk przekazywanych razem między operacjami</td>
-</tr>
-<tr>
-<td><strong>Rozp</strong></td>
-<td>najwcześniejszy możliwy termin rozpoczęcia (liczba albo data i czas)</td>
-</tr>
-<tr>
-<td><strong>Termin</strong></td>
-<td>termin dyrektywny (liczba albo data i czas)</td>
+<td><strong>Proces Gł.</strong></td>
+<td>proces główny — proces technologiczny, według którego realizowane jest zlecenie (ostatni w strukturze, np. montaż końcowy)</td>
 </tr>
 <tr>
 <td><strong>Strategia</strong></td>
-<td>strategia harmonogramowania</td>
+<td>strategia planowania: <code>Forward</code> — w przód, <code>Backward</code> — wstecz (od terminu dyrektywnego)</td>
+</tr>
+<tr>
+<td><strong>Liczba szt.</strong></td>
+<td>liczba sztuk w całym zleceniu</td>
+</tr>
+<tr>
+<td><strong>Szt.w partii</strong></td>
+<td>liczba sztuk w partii przekazywanej razem między operacjami</td>
 </tr>
 <tr>
 <td><strong>Przepływ</strong></td>
 <td>sposób przepływu partii: szeregowy, niezależny, szeregowo-niezależny</td>
 </tr>
 <tr>
+<td><strong>Rozp.(int.)</strong>, <strong>Rozp.(Data)</strong>, <strong>Rozp.(Godz)</strong></td>
+<td>najwcześniejszy termin rozpoczęcia — w jednostkach czasu albo jako data i godzina</td>
+</tr>
+<tr>
+<td><strong>Termin (int.)</strong>, <strong>Termin (Data)</strong>, <strong>Termin (Godz)</strong></td>
+<td>termin dyrektywny (wymagany termin zakończenia) — w jednostkach czasu albo jako data i godzina</td>
+</tr>
+<tr>
+<td><strong>Priorytet</strong></td>
+<td>ważność zlecenia: niższa wartość — ważniejsze zlecenie; używany przez reguły według priorytetu</td>
+</tr>
+<tr>
+<td><strong>Kara</strong></td>
+<td>kara za opóźnienie na jednostkę czasu</td>
+</tr>
+<tr>
+<td><strong>Kolor</strong></td>
+<td>kolor zlecenia na wykresie Gantta</td>
+</tr>
+<tr>
 <td><strong>Status</strong></td>
-<td><strong>p</strong> — planowane; <strong>b</strong> — planowane z najwyższym priorytetem; <strong>n</strong> — pomijane przy harmonogramowaniu</td>
+<td><code>p</code> — do planowania; <code>b</code> — blokowane: planowane przed pozostałymi zleceniami; <code>n</code> — nierozpatrywane (pomijane przy harmonogramowaniu)</td>
+</tr>
+<tr>
+<td><strong>Grupa Kr.</strong></td>
+<td>grupa kryteriów — zlecenia z różnych grup można oceniać niezależnie</td>
 </tr>
 </tbody>
 </table>
+<p>Zlecenia dodaje się i usuwa przyciskami <strong>Z+</strong> / <strong>Z-</strong>. Strategię, przepływ, terminy dyrektywne i statusy wszystkich zleceń zmienia się naraz z menu tabeli (prawy przycisk): <strong>Zmiana strategii</strong>, <strong>Zmiana przepływu</strong>, <strong>Zmiana terminów dyrektywnych</strong>, <strong>Zmiana statusów zleceń</strong>.</p>
 <p>Zestawienie <strong>Procesy w zleceniu</strong> odświeża się po zapisaniu struktur procesów.</p>
 
 
