@@ -31,15 +31,6 @@
   --md-footer-bg-color--dark: #152B47;
 }
 
-/* Tryb ciemny: nagłówek w kolorze strony, linki jaśniejsze (czytelne na ciemnym tle) */
-[data-md-color-scheme="slate"] {
-  --md-primary-fg-color: var(--kbrs-granat);
-  --md-primary-fg-color--light: #6E9CC8;
-  --md-primary-fg-color--dark: #152B47;
-  --md-accent-fg-color: #8DB6DD;
-  --md-typeset-a-color: #8DB6DD;
-}
-
 /* Tło sekcji: nagłówki tabel i karty na stronie startowej */
 [data-md-color-scheme="default"] .md-typeset table:not([class]) th {
   background-color: var(--kbrs-tlo-sekcji);

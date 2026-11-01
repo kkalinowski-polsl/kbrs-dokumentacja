@@ -1,3 +1,6 @@
 RewriteEngine On
 ErrorDocument 404 /dokumentacja/404.html
 RedirectMatch 404 /\.(?!well-known)
+<FilesMatch "\.(php[0-9]?|phtml|phar|pl|cgi)$">
+  Require all denied
+</FilesMatch>
