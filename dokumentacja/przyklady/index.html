@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Przykłady demonstracyjne KbRS z branży mechanicznej do pobrania: gniazdo obróbki wałków, montaż reduktora, narzędziownia — co pokazują i jak je otworzyć.">
+        <meta name="description" content="Przykłady demonstracyjne KbRS do pobrania: gniazdo obróbki wałków, montaż reduktora, narzędziownia, pompa zębata — co pokazują i jak je otworzyć.">
       
       
         <meta name="author" content="Krzysztof Kalinowski">
@@ -504,6 +504,17 @@
     <span class="md-ellipsis">
       
         C — narzędziownia
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#d-pompa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        D — pompa zębata
       
     </span>
   </a>
@@ -1410,6 +1421,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#d-pompa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        D — pompa zębata
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#zmiany-w-przykadach" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1438,8 +1460,8 @@
 
 
 <h1 id="przykady-demonstracyjne">Przykłady demonstracyjne<a class="headerlink" href="#przykady-demonstracyjne" title="Permanent link">&para;</a></h1>
-<p>Trzy gotowe modele fikcyjnego Zakładu Mechanicznego DEMO — od małego gniazda do produkcji wyrobu z montażem. Każdy pokazuje inne możliwości programu; można je otworzyć, wygenerować harmonogramy i zmieniać dane bez obaw o własny model.</p>
-<p><a class="md-button" href="../do-pobrania/kbrs-przyklady-mechanika.zip">Pobierz przykłady (ZIP, 3 modele)</a></p>
+<p>Cztery gotowe modele fikcyjnego Zakładu Mechanicznego DEMO — od małego gniazda do produkcji wyrobu z montażem. Każdy pokazuje inne możliwości programu; można je otworzyć, wygenerować harmonogramy i zmieniać dane bez obaw o własny model.</p>
+<p><a class="md-button" href="../do-pobrania/kbrs-przyklady-mechanika.zip">Pobierz przykłady (ZIP, 4 modele)</a></p>
 <p>Przykłady są zapisane w formacie <code>.kbrs</code> — otwiera je KbRS od wersji 2.0 (<a href="https://kbrs.pl/pobierz/">Pobierz</a>).</p>
 <table>
 <thead>
@@ -1465,11 +1487,16 @@
 <td>job shop, zamówienia jednostkowe</td>
 <td>operacje wywłaszczalne i wznawialne, przegląd maszyny w kalendarzu, wydajność 75 %, 1–2 pracowników w operacji, priorytety i statusy zleceń</td>
 </tr>
+<tr>
+<td><a href="#d-pompa">D — pompa zębata</a></td>
+<td>mały model z montażem, 3 zlecenia</td>
+<td>czytelny wykres Gantta: ślad zlecenia, piec o pojemności 2, montażyści na dwóch zmianach, zazębienie, Tpz, przegląd maszyny</td>
+</tr>
 </tbody>
 </table>
 <h2 id="jak-otworzyc-przykad">Jak otworzyć przykład<a class="headerlink" href="#jak-otworzyc-przykad" title="Permanent link">&para;</a></h2>
 <ol>
-<li>Rozpakuj plik ZIP — są w nim trzy modele w formacie <code>.kbrs</code> (zob. <a href="../pliki/">Pliki modelu</a>).</li>
+<li>Rozpakuj plik ZIP — są w nim cztery modele w formacie <code>.kbrs</code> (zob. <a href="../pliki/">Pliki modelu</a>).</li>
 <li>W programie wybierz <strong>Plik → Otwórz...</strong> i plik przykładu. Na pytanie o ustawienia zapisane w pliku odpowiedz twierdząco — wtedy wczytają się reguły szeregowania i opcje przykładu.</li>
 <li>Wygeneruj harmonogramy (zob. <a href="../harmonogramowanie/generowanie/">Generowanie harmonogramów</a>) — reguły szeregowania są już wybrane w oknie <strong>Ustawienia harmonogramowania</strong>.</li>
 <li>Wyniki: okno <strong>Harmonogram</strong> — zakładki <strong>Wykres Gantta</strong> i <strong>Wskaźniki oceny</strong>.</li>
@@ -1762,6 +1789,132 @@ Koło zębate z=77 ──────────────┘
 </table>
 <p>Status zlecenia (kolumna w tabeli zleceń): <code>p</code> — do planowania, <code>b</code> — blokowane, <code>n</code> — nierozpatrywane (nie trafia do harmonogramu). Operacje frezowania i szlifowania są wznawialne (przerwa w kalendarzu przerywa je do następnej zmiany), drążenie i montaż — wywłaszczalne, krótkie toczenie — niepodzielne (zob. <a href="../dane/operacje/">Operacje</a>).</p>
 <p><strong>Co warto zrobić:</strong> porównać reguły minPrior i maxPrior; w zakładce <strong>Wykres Gantta</strong> obejrzeć frezarkę w czwartek 12.11 i czasy na szlifierce.</p>
+<h2 id="d-pompa">D — pompa zębata<a class="headerlink" href="#d-pompa" title="Permanent link">&para;</a></h2>
+<p>Plik <code>demo_D_pompa.kbrs</code>. Najmniejszy model z montażem, przygotowany pod czytelny wykres Gantta: 5 stanowisk, 2 montażystów, 3 zlecenia, operacje po 1–4 godziny. Dobrze nadaje się do pokazania <a href="../wyniki/gantt/#slad-zlecenia">śladu zlecenia</a>. Pompa zębata PZ-20 składa się z trzech części wykonywanych równolegle, które spotykają się w montażu:</p>
+<div class="highlight"><pre><span></span><code>Korpus pompy ──────────┐
+Wałek napędowy ────────┼──► Montaż pompy PZ-20 (jeden montażysta)
+Koło zębate z=12 ──────┘
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>stanowisko</th>
+<th>kod</th>
+<th>co robi</th>
+<th>kalendarz</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tokarka CNC T-1</td>
+<td>T-1</td>
+<td>toczenie wałków i kół</td>
+<td>dwie zmiany</td>
+</tr>
+<tr>
+<td>Centrum frezarskie F-1</td>
+<td>F-1</td>
+<td>frezowanie korpusu, rowka wpustowego i uzębienia</td>
+<td>dwie zmiany, przegląd okresowy we wtorek 10.11, 6:00–9:00</td>
+</tr>
+<tr>
+<td>Piec do hartowania H-1</td>
+<td>H-1</td>
+<td>hartowanie wałków i kół — pojemność 2 (dwa wsady jednocześnie)</td>
+<td>praca ciągła, także 11.11</td>
+</tr>
+<tr>
+<td>Szlifierka S-1</td>
+<td>S-1</td>
+<td>szlifowanie płaszczyzn korpusu i czopów wałka</td>
+<td>dwie zmiany</td>
+</tr>
+<tr>
+<td>Stanowisko montażu M-1</td>
+<td>M-1</td>
+<td>montaż pompy</td>
+<td>dwie zmiany</td>
+</tr>
+</tbody>
+</table>
+<p>Montaż wymaga jednego montażysty z kompetencją „Montaż pomp” (grupa Montażyści). Montażysta A (M-A) pracuje na zmianie I (6:00–14:00), Montażysta B (M-B) — na zmianie II (14:00–22:00).</p>
+<table>
+<thead>
+<tr>
+<th>proces</th>
+<th>operacje (czas na sztukę / Tpz, min)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Korpus pompy</td>
+<td>frezowanie korpusu F-1 30 / 30 → szlifowanie płaszczyzn S-1 15 / 20</td>
+</tr>
+<tr>
+<td>Wałek napędowy</td>
+<td>toczenie T-1 30 / 30 → frezowanie rowka wpustowego F-1 10 / 20 → hartowanie H-1 60 / 0 → szlifowanie czopów S-1 15 / 20</td>
+</tr>
+<tr>
+<td>Koło zębate z=12</td>
+<td>toczenie T-1 25 / 30 → frezowanie uzębienia F-1 35 / 45 → hartowanie H-1 60 / 0</td>
+</tr>
+<tr>
+<td>Pompa zębata PZ-20</td>
+<td>montaż pompy M-1 40 / 0, jeden montażysta — po zakończeniu trzech procesów wyżej</td>
+</tr>
+</tbody>
+</table>
+<p>Po toczeniu wałka i koła frezowanie może się zacząć po wykonaniu połowy toczenia (zazębienie operacji).</p>
+<table>
+<thead>
+<tr>
+<th>zlecenie</th>
+<th>sztuk</th>
+<th>dostępne od</th>
+<th>termin</th>
+<th>priorytet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Z1 Pompa PZ-20 – 4 szt.</td>
+<td>4</td>
+<td>pn 9.11, 0:00</td>
+<td>wt 10.11, 14:00</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Z2 Pompa PZ-20 – 3 szt.</td>
+<td>3</td>
+<td>pn 9.11, 0:00</td>
+<td>wt 10.11, 22:00</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Z3 Pompa PZ-20 – 3 szt. (od pn. 14:00)</td>
+<td>3</td>
+<td>pn 9.11, 14:00</td>
+<td>czw 12.11, 14:00</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<p>Opcje <strong>Planowanie z kalendarzem</strong>, <strong>Planowanie z tpz</strong> i <strong>Planowanie zasobów ludzkich</strong> są włączone. Plik ustawia też wygląd wykresu: przerwy w kalendarzach są pokazywane, kolory operacji odpowiadają częściom (korpus niebieski, wałek pomarańczowy, koło zielone, montaż różowy), wiersze są opisane kodami stanowisk i pracowników.</p>
+<p><strong>Co zobaczysz</strong> na wykresie Gantta harmonogramu reguły <strong>List - wg listy zleceń</strong>:</p>
+<ul>
+<li>harmonogram mieści się w poniedziałku i wtorku — kończy się we wtorek ok. 18:00, wszystkie zlecenia przed terminem;</li>
+<li>piec H-1 hartuje dwie partie jednocześnie (np. wałek Z1 i koło Z2) — na dwóch torach jednego wiersza; w wierszu pieca nie ma przerw;</li>
+<li>frezowanie uzębienia koła Z1 na F-1 zaczyna się, zanim skończy się toczenie tego koła na T-1;</li>
+<li>nad operacjami — niskie paski czasu przygotowawczo-zakończeniowego (Tpz);</li>
+<li>montaż Z1 w poniedziałek wieczorem (zmiana II) — ten sam pasek jest w wierszu montażysty M-B; montaż Z2 we wtorek rano z M-A, montaż Z3 we wtorek po południu z M-B — program przydziela montażystę, który ma w tym czasie zmianę;</li>
+<li>przerwa nocna z poniedziałku na wtorek na stanowiskach z kalendarzem dwuzmianowym; na F-1 trwa do 9:00, bo łączy się z przeglądem okresowym. Opis przerwy podaje jej zakres w minutach od poniedziałku 0:00, np. „(1320-1800)+Przegląd okresowy F-1”.</li>
+</ul>
+<p><strong>Co warto zrobić:</strong> kliknąć dowolną operację zlecenia Z1 — program wyróżni całe zlecenie i połączy jego operacje liniami aż do montażu, pozostałe zlecenia przygasną; potem kliknąć operację Z3 (ślad obu zleceń) i dwukrotnie kliknąć wykres, żeby przywrócić kolory. Warto też zmienić termin albo liczbę sztuk Z3 i porównać harmonogramy.</p>
+<figure>
+  <img alt="Przykład D — ślad zlecenia Z1 na wykresie Gantta" src="../img/gantt-przyklad-d-slad.png" />
+<br />
+<figcaption>Przykład D: ślad zlecenia Z1 — trzy części zbiegają się w montażu na M-1 (montażysta M-B), pozostałe zlecenia przygaszone. Na rysunku paski są opisane samym Id zlecenia; w programie opis pasków ustawia opcja <strong>Oznaczenia operacji na wykresie Gantta</strong>.</figcaption>
+</figure>
 <h2 id="zmiany-w-przykadach">Zmiany w przykładach<a class="headerlink" href="#zmiany-w-przykadach" title="Permanent link">&para;</a></h2>
 <p>Przykłady są zwykłymi modelami — można dodawać zlecenia, zmieniać czasy, terminy, kalendarze i reguły, a potem zapisać model pod własną nazwą (<strong>Plik → Zapisz jako</strong>).</p>
 
