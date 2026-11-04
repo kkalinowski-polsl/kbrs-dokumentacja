@@ -1458,7 +1458,7 @@
 <tr>
 <td><a href="#b-reduktor">B — montaż reduktora</a></td>
 <td>produkcja seryjna z montażem</td>
-<td>struktura procesów, piec o pojemności 4, tokarki o różnych czasach, Tpz, partie, zazębienie, montażyści, kalendarz ze świętem, harmonogramowanie wstecz</td>
+<td>struktura procesów, piec o pojemności 2, tokarki o różnych czasach, Tpz, partie, zazębienie, montażyści, kalendarz ze świętem i przeglądem maszyny, harmonogramowanie wstecz</td>
 </tr>
 <tr>
 <td><a href="#c-narzedziownia">C — narzędziownia</a></td>
@@ -1599,7 +1599,7 @@ Koło zębate z=77 ──────────────┘
 </tr>
 <tr>
 <td>stanowisko o pojemności większej niż 1</td>
-<td>Piec do hartowania PH-1 — 4 wsady jednocześnie; hartuje zębniki i koła zębate</td>
+<td>Piec do hartowania PH-1 — 2 wsady jednocześnie; hartuje zębniki i koła zębate</td>
 </tr>
 <tr>
 <td>stanowiska równoległe o różnych czasach</td>
@@ -1624,6 +1624,10 @@ Koło zębate z=77 ──────────────┘
 <tr>
 <td>kalendarz ze świętem</td>
 <td>dwie zmiany (obróbka), jedna zmiana (montaż), piec pracuje bez przerwy — także 11.11</td>
+</tr>
+<tr>
+<td>przegląd maszyny w kalendarzu</td>
+<td>Frezarka obwiedniowa FO-1 — przegląd okresowy we wtorek 10.11, 6:00–10:00 (przerwa w kalendarzu maszyny)</td>
 </tr>
 <tr>
 <td>harmonogramowanie wstecz</td>
@@ -1666,6 +1670,10 @@ Koło zębate z=77 ──────────────┘
 </tbody>
 </table>
 <p>Opcje <strong>Planowanie z kalendarzem</strong>, <strong>Planowanie z tpz</strong> i <strong>Planowanie zasobów ludzkich</strong> są włączone. Proces montażu ma też listę materiałów (łożyska, uszczelnienia, śruby, olej).</p>
+<div class="admonition info">
+<p class="admonition-title">Zmiany w wersji 2.1</p>
+<p>Piec PH-1 ma pojemność 2 (było 4), frezarka FO-1 ma przegląd w kalendarzu, a wykres pokazuje przerwy, kolory operacji według procesu i kody stanowisk. W przykładach B i C pracownicy dostają operacje — w pliku z wersji 2.0 kompetencje miały czas pracy 0 i wiersze pracowników na wykresie Gantta były puste. Pobierz plik ponownie.</p>
+</div>
 <h2 id="c-narzedziownia">C — narzędziownia<a class="headerlink" href="#c-narzedziownia" title="Permanent link">&para;</a></h2>
 <p>Plik <code>demo_C_narzedziownia.kbrs</code>. Narzędziownia wykonuje pojedyncze narzędzia i naprawy; każde zamówienie ma własną marszrutę (job shop).</p>
 <table>
